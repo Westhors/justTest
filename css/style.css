@@ -1,0 +1,863 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  
+  display: flex;
+  justify-content: center;
+  
+}
+.all-wepsit
+{
+  width: 100%;
+}
+/* start Header */
+.squaer
+{
+  width: 100px;
+  height: 100px;
+  background-color: #32507200;
+  position: relative;
+  bottom: 25%;
+ display: flex;
+align-items: center;
+justify-content: center;
+ left: 46%;
+}
+
+
+.font
+{
+    background-color:rgb(216, 210, 210);
+    position: fixed;
+    top: 30%;
+    left: -6px;
+    font-size: 20px;
+    padding: 5px;
+    color: rgb(0, 0, 0); 
+}
+
+
+.ani
+{
+  width: 20px;
+  height: 40px;
+  border: solid rgb(255, 255, 255) 2px;
+  display: flex;
+  padding-top: 5px;
+  justify-content: center;
+  position: relative;
+  animation: move-ani 1s infinite alternate;
+}
+@keyframes move-ani
+{
+  0%{top: 0%;}
+  100%{top: 70px;}
+}
+.point
+{
+  width: 6px;
+  height: 6px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+
+  animation: move-point 2s infinite alternate;
+
+}
+
+@keyframes move-point
+{
+  0%{top: 0%;opacity: 0;}
+  100%{top: 70%;opacity: 1;}
+}
+/* animation///// */
+.head-title
+{
+    animation: move 1s ;
+}
+@keyframes move
+{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes move
+{
+    0%{transform: scale(0,0);}
+    100%{transform: scale(1.6.1.6);}
+}
+
+.four-back
+{
+    animation: four-back 2s ;
+}
+@keyframes four-back
+{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes four-back
+{
+    0%{transform: scale(0,0);}
+    100%{transform: scale(1.6.1.6);}
+}
+
+.ahmedsdsd
+{
+    animation: three-btnon 3s ;
+}
+@keyframes three-btnon
+{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes three-btnon
+{
+    0%{transform: scale(0,0);}
+    100%{transform: scale(1.6.1.6);}
+}
+
+header {
+  background-image: url(../img/pexels-gabriela-palai-395196\ \(1\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  
+}
+header .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+.centerContent {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+.centerContent h1 {
+  font-size: 2em;
+  color: rgb(65, 195, 235);
+  font-weight: 900;
+}
+.centerContent p {
+  font-size: 0.7em;
+  font-weight: 900;
+}
+.centerContent h2 {
+  font-size: 0.9em;
+}
+.navbar-toggler-icon {
+  color: #fff !important;
+}
+.navbar-toggler-icon {
+  background-color: rgb(65, 195, 235);
+}
+.navbar-light .navbar-toggler {
+  outline: none;
+}
+@media (max-width: 991px) {
+  ul.navbar-nav {
+    background: #333333;
+    text-align: center;
+    width: 100%;
+  }
+  .centerContent {
+    font-size: 20px;
+    height: 65vh;
+  }
+}
+
+/*Start navbar */
+.navbar-nav {
+  margin-left: auto;
+}
+.container > a {
+  font-weight: 900 !important;
+  font-size: 25px !important;
+}
+.bg-light {
+  background-color: transparent !important;
+}
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}
+.nav-link {
+  transition: 0.5s ease-out;
+}
+.nav-link:hover {
+  color: rgb(65, 195, 235) !important;
+}
+.active {
+  color: rgb(65, 195, 235) !important;
+}
+.ahmed-van
+{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*End navbar */
+/* end Header */
+/*Start section About*/
+.About {
+  padding: 90px 0 40px 0;
+}
+.About .col-lg-4 .borderImg {
+  border: 8px solid rgb(48, 48, 48);
+  height: 500px;
+  width: 350px;
+  border-radius: 5px;
+  position: relative;
+}
+.About .col-lg-4 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  top: 25px;
+  right: -25px;
+  position: absolute;
+}
+.About .col-lg-4 .borderImg .overlay {
+  width: 100%;
+  height: 0px;
+  border-radius: 5px;
+  top: 25px;
+  right: -25px;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(65, 195, 235, 0.452);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+.About .col-lg-4 .borderImg:hover .overlay {
+  height: 100%;
+  opacity: 1;
+}
+.About .col-lg-4 .borderImg .overlay a {
+  background-color: transparent;
+  padding: 0 10px;
+  margin: 0;
+}
+.About .col-lg-4 .borderImg .overlay a i {
+  font-size: 20px;
+  padding-left: 0;
+}
+.About .col-lg-8 {
+  padding: 0 100px;
+}
+.About .rowBlock {
+  display: flex;
+  flex-wrap: wrap;
+}
+.About .blockA {
+  margin-right: 30px;
+}
+.About ul {
+  list-style: none;
+  padding-left: 0;
+}
+.About ul li {
+  padding-bottom: 15px;
+}
+.About ul span {
+  padding-right: 10px;
+  font-weight: 900;
+  color: #333333;
+}
+.About p {
+  padding: 27px 0;
+  border-bottom: 1px dashed #999999;
+  font-size: 18px;
+}
+.About a {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(65, 195, 235);
+  padding: 13px 25px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  transition: 0.5s ease-out;
+}
+.About a:hover {
+  background-color: rgb(124, 210, 236);
+}
+.About i {
+  padding-left: 20px;
+}
+.About h2 {
+  position: relative;
+  font-size: 40px;
+  font-weight: 900;
+}
+.About h2::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(65, 195, 235);
+  left: -15px;
+  top: 0;
+  height: 100%;
+  width: 5px;
+}
+.About .btnPro {
+  display: flex;
+  flex-wrap: wrap;
+}
+.About .col-sm-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+/*End section About*/
+/*Start section Services*/
+.Services {
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+  padding: 50px 0;
+}
+.Services h2 {
+  margin-bottom: 70px;
+  font-size: 40px;
+  font-weight: 900;
+  position: relative;
+}
+.Services h2::before {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  border-color: rgb(65, 195, 235);
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: -15px;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+.Services h2::after {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background-color: rgb(65, 195, 235);
+  bottom: -10px;
+  height: 1px;
+  width: 160px;
+}
+.Services .cardServ i {
+  color: rgb(65, 195, 235);
+  font-size: 30px;
+  margin-bottom: 20px;
+  transition: 0.2s ease-out;
+}
+.Services .cardServ {
+  padding: 30px 10px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s ease-out;
+}
+.Services .cardServ:hover {
+  background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(194, 194, 194, 0.76);
+}
+.Services .cardServ:hover i {
+  font-size: 35px;
+}
+.Services .cardServ h4 {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+/*End section Services*/
+/*Start section Portfolio*/
+.Portfolio {
+  text-align: center;
+  padding: 50px 0;
+}
+.Portfolio h2 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 900;
+  position: relative;
+}
+.Portfolio h2::before {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  border-color: rgb(65, 195, 235);
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: -15px;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+.Portfolio h2::after {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background-color: rgb(65, 195, 235);
+  bottom: -10px;
+  height: 1px;
+  width: 160px;
+}
+.Portfolio .listP {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.Portfolio .listP ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+.Portfolio .listP ul li {
+  padding: 20px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.Portfolio .contairImg {
+  position: relative;
+  margin-bottom: 30px;
+}
+.Portfolio .contairImg:hover .overlayImg {
+  opacity: 1;
+}
+.Portfolio img {
+  max-width: 100%;
+  height: auto;
+}
+.Portfolio .overlayImg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 195, 235, 0.452);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+.Portfolio .overlayImg i {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #333333;
+  font-size: 20px;
+}
+
+.activeP {
+  color: rgb(65, 195, 235);
+}
+/*End section Portfolio*/
+/*Start section Services*/
+.DataPr {
+  background-color: rgb(240, 240, 240);
+  padding: 90px 0 60px 0;
+}
+.DataPr h2::after {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background-color: rgb(65, 195, 235);
+  bottom: -10px;
+  height: 1px;
+  width: 160px;
+}
+.DataPr .cardServ i {
+  color: rgb(65, 195, 235);
+  font-size: 30px;
+  margin-bottom: 20px;
+  transition: 0.2s ease-out;
+}
+.DataPr .cardServ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s ease-out;
+}
+.DataPr .cardServ h4 {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.DataPr .col-sm-12 {
+  margin-bottom: 0px;
+}
+/*End section DataPr*/
+/*Start section Testemonial*/
+.Testemonial {
+  text-align: center;
+  padding: 50px 0;
+}
+.Testemonial h2 {
+  margin-bottom: 70px;
+  font-size: 40px;
+  font-weight: 900;
+  position: relative;
+}
+.Testemonial h2::before {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  border-color: rgb(65, 195, 235);
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: -15px;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+.Testemonial h2::after {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background-color: rgb(65, 195, 235);
+  bottom: -10px;
+  height: 1px;
+  width: 160px;
+}
+.Testemonial .cardTestemonial {
+  background-color: #eeeeee;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  padding: 50px 50px;
+}
+.Testemonial .cardTestemonial img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+.Testemonial .cardTestemonial .trianglCard {
+  background-color: rgb(65, 195, 235);
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: -150px;
+  top: -150px;
+  transform: rotate(45deg);
+}
+.Testemonial .col-md-9 {
+  text-align: left;
+}
+.Testemonial a {
+  text-decoration: none;
+  color: #333333;
+}
+.Testemonial .fas {
+  margin-right: 10px;
+}
+.Testemonial .fa-star,
+.Testemonial .far {
+  color: gold;
+  margin: 0;
+}
+/*End section Testemonial*/
+/*Start section Blog*/
+.Blog {
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+  padding: 50px 0;
+}
+.Blog h2 {
+  margin-bottom: 70px;
+  font-size: 40px;
+  font-weight: 900;
+  position: relative;
+}
+.Blog h2::before {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  border-color: rgb(65, 195, 235);
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: -15px;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+.Blog h2::after {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background-color: rgb(65, 195, 235);
+  bottom: -10px;
+  height: 1px;
+  width: 160px;
+}
+.Blog .card {
+  width: 100% !important;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.Blog .card img {
+  width: 100%;
+  height: 100%;
+}
+.Blog .postCard {
+  padding: 18px;
+}
+.Blog .postMeta {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.Blog h3 {
+  font-weight: 900;
+  margin-bottom: 13px;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+.Blog h3:hover {
+  color: rgb(65, 195, 235);
+}
+.Blog a {
+  text-decoration: none;
+  color: #333333;
+}
+.Blog .postTumb {
+  height: 200px;
+}
+.Blog iframe {
+  width: 100%;
+  height: 100%;
+}
+/*End section Blog*/
+/*Start section Contact*/
+.Contact {
+  text-align: center;
+  padding: 50px 0;
+}
+.Contact h2 {
+  margin-bottom: 70px;
+  font-size: 40px;
+  font-weight: 900;
+  position: relative;
+}
+.Contact h2::before {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  border-color: rgb(65, 195, 235);
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: -15px;
+  padding: 4px 0 5px;
+  width: 70px;
+}
+.Contact h2::after {
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  background-color: rgb(65, 195, 235);
+  bottom: -10px;
+  height: 1px;
+  width: 160px;
+}
+.Contact input,
+.Contact textarea {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(206, 206, 206);
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.Contact textarea {
+  height: 200px;
+  resize: none;
+}
+.Contact button {
+  color: #fff;
+  background-color: rgb(65, 195, 235);
+  padding: 13px 25px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 14px;
+}
+/*End section Contact*/
+/*Start section Footer*/
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 39, 39);
+  padding: 20px 0;
+}
+.Footer div {
+  margin-bottom: 10px;
+}
+.Footer a {
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.Footer p {
+  color: #fff;
+  font-weight: 900;
+}
+.Footer span {
+  color: rgb(65, 195, 235);
+}
+/*End section Footer*/
+
+/*
+ ///////////////////////////
+////////////////////////////
+///////////slider/////////////
+////////////////////////////
+////////////////////////////
+ */
+ #slider
+ {
+     background-color: #f4f4f4;
+ }
+ .ali-color
+ {
+     background-color: white;
+ }
+ 
+  .ahmed-img
+  {
+      width: 400px;
+      bottom: 67%;
+      transform: translateX(-50%);
+      left: 50%;
+  }
+ 
+  .sahm-shamal
+  {
+     position: relative;
+     right:  200px;
+     color: rgb(129, 23, 23);
+  }
+  .ahmed-icon
+  {
+      font-size: 40px;
+      color: black;
+  }
+  
+ 
+  
+ 
+
+
+  /* --------------------------------------------------- */
+#office
+{
+    background-image: url(../img/pexels-gabriela-palai-395196\ \(1\).jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.backblue
+{
+    background-color: rgba(39, 77, 202, 0.6);
+}
+.container
+{
+    back
+    height: 70%;
+}
+.iconede
+{
+    font-size: 24px;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border:rgb(233, 233, 236) solid 9px;
+    top: 10%;
+    left: 37%;
+}
+.h-h
+{
+    padding-top: 100px;
+}
+.itemeses
+{
+    margin: 100px 0;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+.ahmed-abdalla
+{
+    
+    padding: 50px;
+    background-color: whitesmoke;
+}
+
+.icon-location
+{
+    width: 3rem;
+    height: 3rem;
+    border: solid 5px #3393ff;
+    border-radius: 50%;
+
+}
+
+.icon-location:hover 
+{
+    color: white;
+    background-color: #3393ff;
+}
+
+h2
+{
+    font-size: 2rem;
+    color: #1e1e1e;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    position: relative;
+
+}
+.col-md-6 h2::after
+{
+    margin-bottom: 50px;
+    content: '';
+    background-color: #3393ff;
+    width: 5rem;
+    height: 0.2rem;
+   position: absolute;
+   top: 120%;
+   right: 84%;
+}
+/* ---------------------------------------------------------------------- */
